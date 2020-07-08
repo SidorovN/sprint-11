@@ -1,0 +1,7 @@
+@import url(./_type/popup__content_type_card.css);
+@import url(./_type/popup__content_type_add.css);
+@import url(./_type/popup__content_type_edit.css);
+
+.popup__content {
+  position: relative;
+}

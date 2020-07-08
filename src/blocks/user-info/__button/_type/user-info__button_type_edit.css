@@ -1,0 +1,14 @@
+
+.user-info__button_type_edit {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+  }
+
+@media screen and (max-width: 980px) {
+  .user-info__button_type_edit {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
