@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -28,7 +29,7 @@
     </div>
     <div class="popup popup_type_edit">
       <div class="popup__content popup__content_type_edit">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="edit">
           <div class="popup__fieldset">
@@ -46,7 +47,7 @@
 
     <div class="popup popup_type_add">
       <div class="popup__content popup__content_type_add">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
           <div class="popup__fieldset">
@@ -63,7 +64,7 @@
     </div>
     <div class="popup popup_type_card">
       <div class="popup__content_type_card popup__content">
-      <img class="popup__close" src="./images/close.svg">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
       <img class="popup__image" src="">
     </div>
   </div>
@@ -86,6 +87,7 @@
   <script src="./scripts/UserInfo.js"></script>
   <script src="./scripts/Popup.js"></script>
   <script src="./scripts/FormValidator.js"></script> -->
-  <script type="module" src="./scripts/script.js"></script>
+  
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>
