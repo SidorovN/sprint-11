@@ -11,17 +11,8 @@ export default class Api {
     return fetch(`${this.url}${this.cohort}/users/me`,{
       headers: this.headers
     })
-     /** REVIEW: Можно лучше:
-     * 
-     * Повторяющийся код разбора ответа можно вынести в отдельный метод класса и переиспользовать для всех запросов
-     * к API 
-     */
     .then(res => {
       if (!res.ok) {
-         /** REVIEW: Можно лучше:
-         * 
-         * return Promise.reject(new Error(`Ошибка: ${res.status}, ${res.statusText}`));
-         */
         return Promise.reject(res.status);
       } else {
         return res.json();

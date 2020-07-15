@@ -1,8 +1,11 @@
-import Api from './Api'
-import Card from './Card'
-import CardList from './CardList'
-import FormValidator from './FormValidator'
-import UserInfo from './UserInfo'
+
+import Card from './Card.js'
+import CardList from './CardList.js'
+import FormValidator from './FormValidator.js'
+import UserInfo from './UserInfo.js'
+import Popup from './Popup.js'
+import Api from './Api.js'
+import "../pages/index.css";
 
 (function () {
   const user = {
@@ -15,7 +18,8 @@ import UserInfo from './UserInfo'
     cohort: 'cohort11',
 
     headers: {
-      authorization: 'e7098e96-20e3-4827-936a-69dd99849c81'
+      authorization: 'e7098e96-20e3-4827-936a-69dd99849c81',
+      'Content-Type': 'application/json'
     }}
   const errorMessages = {
     valueMissing: 'Заполните это поле',
