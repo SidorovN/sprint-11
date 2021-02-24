@@ -13,7 +13,7 @@ import "../pages/index.css";
     job: 'Sailor, Researcher'
   }
   const config =  {
-    url:'https://praktikum.tk/',
+    url:'https://nomoreparties.co/',
     id: 'e7098e96-20e3-4827-936a-69dd99849c81',
     cohort: 'cohort11',
 
@@ -38,8 +38,8 @@ import "../pages/index.css";
     user.name,
     user.job,
     /* REVIEW: Можно лучше:
-    
-    Вынести поиск элементов с классами.user-info__name и .user-info__job в константы в начале скрипта 
+
+    Вынести поиск элементов с классами.user-info__name и .user-info__job в константы в начале скрипта
     */
     document.querySelector('.user-info__name'),
     document.querySelector('.user-info__job')
@@ -66,8 +66,8 @@ import "../pages/index.css";
 
 
   /* REVIEW: Можно лучше:
-    
-  Вынести поиск элементов с классами .popup_type_card, .popup_type_add и .popup_type_edit вынести в константы в начале скрипта 
+
+  Вынести поиск элементов с классами .popup_type_card, .popup_type_add и .popup_type_edit вынести в константы в начале скрипта
   */
   const cardPopup = new Popup(
     document.querySelector('.popup_type_card'),
@@ -137,14 +137,14 @@ import "../pages/index.css";
 
 
 /** REVIEW:
- * 
- * В целом по работе: 
- * 
- * Все критические ошибки были исправлены, отличная работа! Спасибо за усилия и старания, удачи в следующем спринте и 
+ *
+ * В целом по работе:
+ *
+ * Все критические ошибки были исправлены, отличная работа! Спасибо за усилия и старания, удачи в следующем спринте и
  * успехов в дальнейшем обучении
- * 
+ *
  * Можно лучше: 1) Все указанные "можно лучше" с предыдущего спринта
- * 2) Вынести поиск элементов с классами.user-info__name и .user-info__job в константы в начале скрипта 
+ * 2) Вынести поиск элементов с классами.user-info__name и .user-info__job в константы в начале скрипта
  * 3) Повторяющийся код разбора ответа можно вынести в отдельный метод класса и переиспользовать для всех запросов
- * к API 
+ * к API
  */
